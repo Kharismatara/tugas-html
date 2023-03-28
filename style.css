@@ -22,7 +22,18 @@ main .card {
   padding: 20px;
   text-align: center;
 }
-.hobby {
+
+/*hero */
+.row {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+}
+.row-label {
+  padding: 1rem 7%;
+}
+
+.row-img img {
+  width: 500px;
+  object-fit: cover;
+  object-position: center;
 }
