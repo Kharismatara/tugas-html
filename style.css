@@ -1,5 +1,16 @@
-body {
-  margin: 2rem 7%;
+:root {
+  --primary: #54bca4;
+  --font: #1a2c24;
+  --yellow: #f8d95f;
+}
+
+* {
+  margin: 0;
+  pading: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
 }
 
 .grid {
@@ -36,4 +47,100 @@ main .card {
   width: 500px;
   object-fit: cover;
   object-position: center;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  algin-items: center;
+  pading: 1.4rem 7%;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 2rem;
+  right: 2rem;
+  z-index: 9999;
+}
+
+.navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+.navbar-logo span {
+  color: #f8d95f;
+  font-style: italic;
+}
+
+.navbar .navbar-nav a {
+  color: var(--font);
+  display: inline-block;
+  font-size: 0.9rem;
+  margin: 1rem 1rem;
+}
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  pading-bottom: 0.5rem;
+
+  transform: scaleX(0);
+  transition: 0.2s linier;
+}
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+.container {
+  max-height: 100vh;
+  margin: 3rem 7%;
+}
+.nama {
+  margin: 20rem 7rem;
+  align-items: center;
+  justify-content: center;
+  color: var(--font);
+}
+
+.iconsf {
+  color: var(--font);
+}
+.in {
+  margin-top: 1rem;
+}
+section {
+  margin-top: 10rem;
+}
+.about {
+  margin: 10rem 7rem;
+  align-items: center;
+  justify-content: center;
+  color: var(--font);
+}
+.about p {
+  margin-top: 1rem;
+  tex-algin: center;
+  width: 500px;
+}
+.skill {
+  margin-top: 2rem;
+  width: 200px;
+  margin-right: 1rem;
+  border: 1px solid;
+  color: white;
+  background-color: var(--primary);
+  padding: 1rem 1rem;
+  border-radius: 20px;
+}
+.personal {
+  display: flex;
+  justify-content: start;
+}
+.label-work h1 {
+  text-align: center;
+  padding: 2rem 2rem;
+}
+.label-hobby h1 {
+  text-align: center;
+  margin-top: 5rem;
 }
